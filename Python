@@ -1,0 +1,29 @@
+prices = [3.50, 4.25, 2.00, 5.50]
+total=0
+for price in prices:
+    print(f"Price of item: $price:{price}")
+    total += price
+    print(f"Total: ${total}")
+    
+
+
+tables_orders = [
+    [4.50, 3.00],        # Table 1
+    [5.00, 2.50, 4.00],  # Table 2
+    [3.50]               # Table 3
+]
+
+grand_total = 0 
+for table, orders in enumerate(tables_orders):
+    table_total = 0
+    for price in orders:
+        table_total += price
+    print(f"Table {table + 1} Total: ${table_total}") 
+    grand_total += table_total
+    print(f"Grand Total for Today: ${grand_total}")
+
+drinks = ["Espresso", "Latte", "Green Tea"]
+snacks = ["Cookie", "Muffin"]
+for item in drinks:
+    for snack in snacks:
+        print(f"Combo: {item} with {snack}") 
